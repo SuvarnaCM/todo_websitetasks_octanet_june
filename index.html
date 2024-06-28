@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>WEBSITE TASK LIST</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+  
+    
+    
+    <div class="container">
+        <h1>WEBSITE TASK LIST</h1>
+        <div class="input-container">
+            <input type="text" id="task" placeholder="Add a new task...">
+            <select id="priority">
+                <option value="High"><h4>HIGH PRIORITY</h4></option>
+                <option value="Medium">MEDIUM PRIORITY</option>
+                <option value="Low">LOW PRIORITY</option>
+            </select>
+            <input type="date" id="deadline">
+            <button id="add">Add</button>
+        </div>
+        <div class="lists">
+            <div class="list high">
+                <h3><span style="color: red;">HIGH PRIORITY</span></h3>
+                <ul id="highList"></ul>
+            </div>
+            <div class="list moderate">
+                <h3><span style="color:orange;">MODERATE PRIORITY</span></h3>
+                <ul id="moderateList"></ul>
+            </div>
+            <div class="list low">
+                <h3><span style="color:green;">LOW PRIORITY</span></h3>
+                <ul id="lowList"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
